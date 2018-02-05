@@ -1,0 +1,4 @@
+#install roles
+- src: cmndrsp0ck.galera-cluster
+
+- src: cmndrsp0ck.galera-lb
