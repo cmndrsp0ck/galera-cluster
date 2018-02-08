@@ -20,4 +20,4 @@
   remote_user: ansible
   tasks:
     - import_role:
-        name: cmndrsp0ck.galera-cluster
+        name: cmndrsp0ck.galera-cluster-node
