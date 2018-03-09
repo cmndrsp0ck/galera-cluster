@@ -11,7 +11,7 @@
   remote_user: ansible
   tasks:
     - import_role:
-        name: cmndrsp0ck.galera-lb
+        name: cmndrsp0ck.ansible-galera-lb
 
 - hosts: galera_cluster_node
   gather_facts: yes
@@ -20,4 +20,4 @@
   remote_user: ansible
   tasks:
     - import_role:
-        name: cmndrsp0ck.galera-cluster-node
+        name: cmndrsp0ck.ansible-galera-cluster-node
