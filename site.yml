@@ -3,12 +3,10 @@
 - hosts: all
   gather_facts: yes
   become: True
-  remote_user: ansible
 
 - hosts: galera_loadbalancer
   gather_facts: yes
   become: True
-  remote_user: ansible
   tasks:
     - import_role:
         name: ansible-galera-lb
@@ -17,7 +15,6 @@
   gather_facts: yes
   become: True
   order: inventory
-  remote_user: ansible
   tasks:
     - import_role:
         name: ansible-galera-cluster-node
